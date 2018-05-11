@@ -69,6 +69,18 @@ export function init(configUpdates) {
 				fetchGlobalVendorList().then(store.updateVendorList),
 				fetchPurposeList().then(store.updateCustomPurposeList)
 			]).then(() => {
+
+				// legitimateConsent always reset value for consent on cmp load, set consent to all
+				if(config.legitimateConsent === true){
+					log.debug('As config.legitimateConsent is set, setting consent for all purposes for all vendors.');
+					store.selectAllPurposes(true);
+					store.selectAllVendors(true);				
+					store.selectAllCustomPurposes(true);
+					store.persist();
+					cmp.notify('onSubmit');
+					store.toggleConsentToolShowing(false);
+				}
+
 				cmp.cmpReady = true;
 				cmp.notify('cmpReady');
 			}).catch(err => {
