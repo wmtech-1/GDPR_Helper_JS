@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/appnexus/cmp.svg?branch=master)](https://travis-ci.org/appnexus/cmp)
 
-# AppNexus CMP
+# Helper JavaScript
 CMP is a tool for publishers to engage users of their properties and gather & store end user consent.
 
 ### Installation
