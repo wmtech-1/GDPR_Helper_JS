@@ -14,8 +14,9 @@ Requires that publishers install it on every page.
 Will be available in Open Source (github).
 Works with any client (e.g., OpenWrap) that integrates with IAB's Consent Management Framework.
 
-PLEASE NOTE: By using the Helper JavaScript, you confirm that you have obtained required consents from end users.
-DISCLAIMER: this code was forked from <provide link>
+## Important Notes
+1- By using the Helper JavaScript, you confirm that you have obtained required consents from end users.
+2- This code was forked from https://github.com/appnexus/cmp
 	
 ### Installation
 
