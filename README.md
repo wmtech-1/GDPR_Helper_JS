@@ -4,7 +4,7 @@ Publishers who do not want a CMP (Consent Management Provider) UI to appear as a
 The PubMatic Helper JavaScript code generates a consent object for every bid request. Consent is provided for all the vendors listed in the IAB EU Transparency & Consent Framework Global Vendor List.
 
  
-## The PubMatic Helper JavaScript:
+## The Helper JavaScript:
 
 + Implements all functions, such as getConsentData and getVendorConsents, which are detailed in the IAB Consent Management 
 + Provider JavaScript API.
