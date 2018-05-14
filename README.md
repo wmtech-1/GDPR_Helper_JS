@@ -22,13 +22,68 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
 + `./build/cmp.bundle.js` - Helper Script to include on your site
 
 ## How to Include on Web Page
-Harshad to fill in
+```js
+<!-- 
+	Publisher will need to add following two script tags on their web-pages.
+-->
+<script>
+	window.__cmp = {
+		config: {
+			logging: 'debug'
+		}
+	};
+</script>
+<script src="<<HTTP_PATH_TO_HOSTED_cmp.bundle.js>>" async></script>
+```
+
+### Sample Web Page example
+```js
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!-- 
+        	Publisher will need to add following two script tags on their web-pages.
+        -->
+        <script>
+            window.__cmp = {
+                config: {
+                    logging: 'debug'
+                }
+            };
+        </script>
+        <script src="<<HTTP_PATH_TO_HOSTED_cmp.bundle.js>>" async></script>
+    </head>
+    
+    <body>
+        <h3>
+            Demo
+        </h3>
+        <!-- 
+        	Sample code for accessing APIs.
+        	Publishers do not need to put following code on their web-page. 
+        -->
+        <script>
+            setTimeout(function() {
+                window.__cmp('getVendorConsents', null, function(result) {
+                    console.log('getVendorConsents callback result:\n' + JSON.stringify(result, null, 2));
+                });
+
+                window.__cmp('getConsentData', null, function(result) {
+                    console.log(result);
+                });
+            }, 3000);
+        </script>
+    </body>
+
+</html>
+```
 
 # Instructions to extend (Optional)
 ### Installation
 
 ```sh
-git clone https://github.com/appnexus/cmp.git
+git clone https://github.com/PubMatic/GDPR_Helper_JS.git
 cd cmp
 yarn install
 ```
