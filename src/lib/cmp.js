@@ -125,6 +125,10 @@ export default class Cmp {
 		 * Trigger the consent tool UI to be shown
 		 */
 		showConsentTool: (_, callback = () => {}) => {
+			if(config.implicitConsent === true){
+				log.info(`implicitConsent: true, do not show UI.`);
+				return;
+			}
 			this.store.toggleConsentToolShowing(true);
 			callback(true);
 		}
