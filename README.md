@@ -1,8 +1,22 @@
 [![Build Status](https://travis-ci.org/appnexus/cmp.svg?branch=master)](https://travis-ci.org/appnexus/cmp)
 
 # Helper JavaScript
-CMP is a tool for publishers to engage users of their properties and gather & store end user consent.
+Publishers who do not want a CMP (Consent Management Provider) UI to appear as a pop-up on their site still need the ability to pass a "consent" signal downstream to process bid requests appropriately. Such publishers need a way to operationalize their understanding that they have consent from their users while satisfying the technical need to pass on consent objects.
 
+The PubMatic Helper JavaScript code generates a consent object for every bid request. Consent is provided for all the vendors listed in the IAB EU Transparency & Consent Framework Global Vendor List.
+
+ 
+## The PubMatic Helper JavaScript:
+
+Implements all functions, such as getConsentData and getVendorConsents, which are detailed in the IAB Consent Management Provider JavaScript API.
+Relies on IAB's vendor list to construct the string.
+Requires that publishers install it on every page.
+Will be available in Open Source (github).
+Works with any client (e.g., OpenWrap) that integrates with IAB's Consent Management Framework.
+
+PLEASE NOTE: By using the Helper JavaScript, you confirm that you have obtained required consents from end users.
+DISCLAIMER: this code was forked from <provide link>
+	
 ### Installation
 
 ```sh
