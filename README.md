@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/appnexus/cmp.svg?branch=master)](https://travis-ci.org/appnexus/cmp)
-
 # Helper JavaScript
 Publishers who do not want a CMP (Consent Management Provider) UI to appear as a pop-up on their site still need the ability to pass a "consent" signal downstream to process bid requests appropriately. Such publishers need a way to operationalize their understanding that they have consent from their users while satisfying the technical need to pass on consent objects.
 
@@ -18,7 +16,15 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
 ## Important Notes
 + By using the Helper JavaScript, you confirm that you have obtained required consents from end users.
 + This code was forked from https://github.com/appnexus/cmp
-	
+
+## Download Script
+
++ `./build/cmp.bundle.js` - Helper Script to include on your site
+
+## How to Include on Web Page
+Harshad to fill in
+
+# Instructions to extend (Optional)
 ### Installation
 
 ```sh
