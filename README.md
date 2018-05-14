@@ -28,9 +28,7 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
 -->
 <script>
 	window.__cmp = {
-		config: {
-			logging: 'debug'
-		}
+		config: {}
 	};
 </script>
 <script src="<<HTTP_PATH_TO_HOSTED_cmp.bundle.js>>" async></script>
@@ -47,9 +45,7 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
         -->
         <script>
             window.__cmp = {
-                config: {
-                    logging: 'debug'
-                }
+                config: {}
             };
         </script>
         <script src="<<HTTP_PATH_TO_HOSTED_cmp.bundle.js>>" async></script>
