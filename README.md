@@ -6,12 +6,10 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
  
 ## The Helper JavaScript:
 
-+ Implements all functions, such as getConsentData and getVendorConsents, which are detailed in the IAB Consent Management 
-+ Provider JavaScript API.
-+ Relies on IAB's vendor list to construct the string.
++ Implements all functions, such as getConsentData and getVendorConsents, which are detailed in the IAB Consent Management Provider JavaScript API.
++ Relies on IAB's vendor list to construct the consent string.
 + Requires that publishers install it on every page.
-+ Will be available in Open Source (github).
-+ Works with any client (e.g., OpenWrap) that integrates with IAB's Consent Management Framework.
++ Works with any client (e.g., PubMatic's OpenWrap) that integrates with IAB's Consent Management Framework.
 
 ## Important Notes
 + By using the Helper JavaScript, you confirm that you have obtained required consents from end users.
