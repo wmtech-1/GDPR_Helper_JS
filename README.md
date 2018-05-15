@@ -22,7 +22,7 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
 + [`./build/cmp.complete.bundle.js`](https://raw.githubusercontent.com/PubMatic/GDPR_Helper_JS/master/build/cmp.complete.bundle.js) - Helper Script to include on your site
 
 ## How to Include on Web Page
-```js
+```html
 <!-- 
 	Publisher will need to add following two script tags on their web-pages.
 -->
@@ -31,11 +31,11 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
 		config: {}
 	};
 </script>
-<script src="<<HTTP_PATH_TO_HOSTED_cmp.complete.bundle.js>>" async></script>
+<script src="<<HTTP_PATH_TO_HOSTED_cmp.complete.bundle.js>>"></script>
 ```
 
 ### Sample Web Page
-```js
+```html
 <!DOCTYPE html>
 <html>
     
@@ -48,7 +48,7 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
                 config: {}
             };
         </script>
-        <script src="<<HTTP_PATH_TO_HOSTED_cmp.complete.bundle.js>>" async></script>
+        <script src="<<HTTP_PATH_TO_HOSTED_cmp.complete.bundle.js>>"></script>
     </head>
     
     <body>
