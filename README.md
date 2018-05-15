@@ -24,7 +24,7 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
 ## How to Include on Web Page
 ```html
 <!-- 
-	Publisher will need to add following two script tags on their web-pages.
+	Publishers will need to add following script on their web-pages.
 -->
 <script src="<<HTTP_PATH_TO_HOSTED_cmp.complete.bundle.js>>"></script>
 ```
