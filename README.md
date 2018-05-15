@@ -24,7 +24,8 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
 ## How to Include on Web Page
 ```html
 <!-- 
-	Publishers will need to add following script on their web-pages.
+	Publishers will need to add following script tag on their web-pages.
+	This tag needs to be placed above any other ad tag that needs to pass consent info.
 -->
 <script src="<<HTTP_PATH_TO_HOSTED_cmp.complete.bundle.js>>"></script>
 ```
@@ -36,7 +37,9 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
     
     <head>
         <!-- 
-        	Publisher will need to add following two script tags on their web-pages.
+        Publishers will need to add following script tag on their web-pages.
+	This tag needs to be placed above any other ad tag that needs to pass consent info.
+
         -->
         <script src="<<HTTP_PATH_TO_HOSTED_cmp.complete.bundle.js>>"></script>
     </head>
@@ -46,8 +49,9 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
             Demo
         </h3>
         <!-- 
-        	Sample code for accessing APIs.
-        	Publishers do not need to put following code on their web-page. 
+	Following is just an example that simulates the calls an ad tag would make if it's ready to integrate with
+	IAB's Consent Framework JS 1.1
+        Publishers do not need to put following code on their web-page. 
         -->
         <script>
             setTimeout(function() {
