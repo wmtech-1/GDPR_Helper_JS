@@ -26,11 +26,6 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
 <!-- 
 	Publisher will need to add following two script tags on their web-pages.
 -->
-<script>
-	window.__cmp = {
-		config: {}
-	};
-</script>
 <script src="<<HTTP_PATH_TO_HOSTED_cmp.complete.bundle.js>>"></script>
 ```
 
@@ -43,11 +38,6 @@ The PubMatic Helper JavaScript code generates a consent object for every bid req
         <!-- 
         	Publisher will need to add following two script tags on their web-pages.
         -->
-        <script>
-            window.__cmp = {
-                config: {}
-            };
-        </script>
         <script src="<<HTTP_PATH_TO_HOSTED_cmp.complete.bundle.js>>"></script>
     </head>
     
